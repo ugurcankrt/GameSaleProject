@@ -10,7 +10,18 @@ namespace GameSaleProject.Concrete
     {
         public void Add(User user)
         {
-            Console.WriteLine(user.FirstName+" adlı kullanıcı eklendi.");        }
+            if (user ==null)
+            {
+                Console.WriteLine("Kullanıcı eklemesi başarısız.");
+            }
+
+            else
+            {
+                Console.WriteLine(user.FirstName + " adlı kullanıcı eklendi.");
+            }
+
+        }
+
 
         public void Delete(User user)
         {
