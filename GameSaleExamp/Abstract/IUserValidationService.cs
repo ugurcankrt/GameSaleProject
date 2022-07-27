@@ -5,15 +5,9 @@ using System.Text;
 
 namespace GameSaleProject.Abstract
 {
-    public interface IAuthService
+    public interface IUserValidationService
     {
-        void Add(User user);
 
-        void Delete(User user);
-
-        void Update(User user);
-
-
-
+        bool Validate(User user);
     }
 }
